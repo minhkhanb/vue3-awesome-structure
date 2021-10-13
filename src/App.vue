@@ -1,9 +1,12 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
+    <router-link to="/comp">Comp</router-link> |
     <router-link to="/about">About</router-link>
   </div>
   <router-view />
+  <router-view name="a" />
+  <router-view name="b" />
 </template>
 
 <style lang="scss">
