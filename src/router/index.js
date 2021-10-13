@@ -1,8 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
-import Comp from '../components/comp.vue';
-import CompA from '../components/compA.vue';
-import CompB from '../components/compB.vue';
 
 const routes = [
   {
@@ -18,14 +15,6 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/About.vue'),
-  },
-  {
-    path: '/comp',
-    components: {
-      default: Comp,
-      a: CompA,
-      b: CompB,
-    },
   },
 ];
 
