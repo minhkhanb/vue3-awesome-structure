@@ -1,7 +1,13 @@
 <template>
   <div class="main-layout">
-    <h1>This is layout</h1>
-    <slot />
+    <header>header</header>
+
+    <main>
+      main content
+      <slot />
+    </main>
+
+    <footer>footer</footer>
   </div>
 </template>
 
